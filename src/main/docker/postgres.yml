@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+
+  quarkus-db:
+    container_name: quarkus-db
+    image: postgres:11.6
+    environment:
+      - POSTGRES_USER=quarkus-db
+      - POSTGRES_PASSWORD=quarkus-db
+      - POSTGRES_DB=quarkus-db
+    ports:
+      - 5432:5432
